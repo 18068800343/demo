@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    用户名：<input id="userName">
+    密码：<input type="password" id="password">
+    <button type="button" id="loginS" onclick="loginS()">第三方登录</button>
+</div>
+</body>
+<script src="js/jquery.js"></script>
+<script>
+    function loginS(){
+        // $.ajax({
+        //     url:'http://localhost:8080/cookie/addCookie',
+        //     dataType:'json',
+        //     data:{},
+        //     success:function(json){
+        //
+        //     }
+        //
+        // });
+        // $.ajax({
+        //     url:'/login/loginS',
+        //     dataType:'json',
+        //     data:{},
+        //     success:function( json){
+        //
+        //     }
+        //
+        // });
+        // window.parent.location=window.location;
+        window.open("/login/loginS");
+    }
+</script>
+</html>
